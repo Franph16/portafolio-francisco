@@ -86,7 +86,6 @@ nav a:hover {
 .imagenes-ocultas {
   display: none;
   margin-top: 20px;
-  display: flex;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
