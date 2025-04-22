@@ -13,7 +13,7 @@ img {
 }
 
 .logo {
-  height: 50px;
+  height: 40px; /* Tamaño reducido del logo */
   margin-right: 15px;
 }
 
@@ -64,13 +64,11 @@ nav a:hover {
 .section h2 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #ff9900; /* Mantén este color como base */
+  color: #ff9900; /* Color base naranja */
   background: linear-gradient(45deg, #ff9900, #e67e00, #f39c12); /* Gradiente metálico */
   -webkit-background-clip: text; /* Aplica el gradiente solo al texto */
   color: transparent; /* Hace el color base transparente */
   text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 165, 0, 0.7); /* Efecto de brillo metálico */
-}
-
 }
 
 .gallery .grid {
@@ -80,6 +78,8 @@ nav a:hover {
 }
 
 .gallery img {
+  max-width: 80%; /* Ajusta el tamaño máximo de las imágenes */
+  height: auto;    /* Mantiene la proporción de la imagen */
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -124,4 +124,7 @@ button:hover {
 
 footer {
   text-align: center;
-  padding:
+  padding: 20px;
+  background-color: #222;
+  color: #ccc;
+}
