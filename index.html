@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francisco Alarcon | Fotógrafo Profesional</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Mi Portafolio de Fotografía</h1>
+    <p>Especialista en retratos, bodas y fotografía artística</p>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="sobre-mi" class="section">
+    <h2>Sobre mí</h2>
+    <p>¡Hola! Soy Francisco Alarcon un fotógrafo apasionado por capturar emociones y contar historias visuales. Trabajo en retratos, bodas y fotografía artística. Cada imagen que capturo busca transmitir belleza, autenticidad y alma.</p>
+  </section>
+
+  <section id="galeria" class="section">
+    <h2>Galería Expandible</h2>
+
+    <div class="album">
+      <h3>Sesión al aire libre</h3>
+    <a href="fotos/foto1.jpg" data-lightbox="playa"><img src="fotos/foto1.jpg" alt="Foto 1"></a>
+      <button class="mostrar-btn" data-target="playa">Ver más</button>
+      <div class="imagenes-ocultas" id="playa">
+        <a href="fotos/foto2.jpg" data-lightbox="Aire libre"><img src="fotos/foto2.jpg" alt="foto2"></a>
+        <a href="fotos/foto3.jpg" data-lightbox="Aire libre"><img src="fotos/foto3.jpg" alt="foto3"></a>
+        <a href="fotos/foto4.jpg" data-lightbox="Aire libre"><img src="fotos/foto4.jpg" alt="foto4"></a>
+        <a href="fotos/foto5.jpg" data-lightbox="Aire libre"><img src="fotos/foto5.jpg" alt="foto5"></a>
+      </div>
+    </div>
+
+    <div class="album">
+      <h3>Conciertos</h3>
+      <a href="fotos/boda1.jpg" data-lightbox="boda"><img src="fotos/boda1.jpg" alt="Concierto1"></a>
+      <button class="mostrar-btn" data-target="boda">Ver más</button>
+      <div class="imagenes-ocultas" id="boda">
+        <a href="fotos/boda2.jpg" data-lightbox="boda"><img src="fotos/boda2.jpg" alt="concierto2"></a>
+        <a href="fotos/boda3.jpg" data-lightbox="boda"><img src="fotos/boda3.jpg" alt="concierto3"></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section contacto">
+    <h2>Contacto</h2>
+    <form action="https://formsubmit.co/franciscofotografo1212@gmail.com" method="POST">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" required>
+
+  <label for="email">Correo electrónico:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="mensaje">Mensaje:</label>
+  <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+  <button type="submit">Enviar mensaje</button>
+
+  <!-- Opcionales: evitar spam y redirigir después del envío -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://tu-sitio.com/gracias.html">
+</form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Francisco Alarcon. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Correo flotante -->
+  <div style="position: fixed; bottom: 10px; right: 10px; font-size: 14px; color: #fff; background-color: rgba(0,0,0,0.7); padding: 5px 10px; border-radius: 8px;">
+    📧 franciscofotografo1212@gmail.com
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script>
+    document.querySelectorAll('.mostrar-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = document.getElementById(btn.dataset.target);
+        target.classList.toggle('visible');
+      });
+    });
+  </script>
+</body>
+</html>
