@@ -77,7 +77,7 @@ nav a:hover {
 }
 
 .gallery img {
-  max-width: 70%;
+  max-width: 80%;
   height: auto;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -89,7 +89,7 @@ nav a:hover {
 }
 
 .foto-principal {
-  width: 55%;
+  width: 60%;
   max-width: 250px;
   display: block;
   margin: 0 auto 20px;
