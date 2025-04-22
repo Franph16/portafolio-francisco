@@ -64,7 +64,13 @@ nav a:hover {
 .section h2 {
   font-size: 2em;
   margin-bottom: 20px;
-  color: #ff9900;
+  color: #ff9900; /* Mantén este color como base */
+  background: linear-gradient(45deg, #ff9900, #e67e00, #f39c12); /* Gradiente metálico */
+  -webkit-background-clip: text; /* Aplica el gradiente solo al texto */
+  color: transparent; /* Hace el color base transparente */
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 165, 0, 0.7); /* Efecto de brillo metálico */
+}
+
 }
 
 .gallery .grid {
