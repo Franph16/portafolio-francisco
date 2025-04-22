@@ -19,26 +19,26 @@
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
-
+  
   <section id="sobre-mi" class="section">
     <h2>Sobre mí</h2>
-    <p>¡Hola! Soy Francisco Alarcon, un fotógrafo apasionado por capturar emociones y contar historias visuales...</p>
+    <p>¡Hola! Soy Francisco Alarcon un fotógrafo apasionado por capturar emociones y contar historias visuales. Trabajo en retratos, bodas y eventos sociales. Cada imagen que capturo busca transmitir belleza, autenticidad y alma.</p>
   </section>
 
   <section id="galeria" class="section">
-    <h2>My book</h2>
+    <h2>Mi Book</h2>
 
     <div class="album">
       <h3>Sesión al aire libre</h3>
       <a href="fotos/foto1.jpg" data-lightbox="aire-libre">
-        <img src="fotos/foto1.jpg" alt="..." class="foto-principal">
+        <img src="fotos/foto1.jpg" alt="Foto principal" class="foto-principal">
       </a>
       <button class="mostrar-btn" data-target="aire-libre">Ver más</button>
       <div class="imagenes-ocultas" id="aire-libre">
-        <a href="fotos/foto2.jpg" data-lightbox="Aire libre"><img src="fotos/foto2.jpg" alt="foto2"></a>
-        <a href="fotos/foto3.jpg" data-lightbox="Aire libre"><img src="fotos/foto3.jpg" alt="foto3"></a>
-        <a href="fotos/foto4.jpg" data-lightbox="Aire libre"><img src="fotos/foto4.jpg" alt="foto4"></a>
-        <a href="fotos/foto5.jpg" data-lightbox="Aire libre"><img src="fotos/foto5.jpg" alt="foto5"></a>
+        <a href="fotos/foto2.jpg" data-lightbox="aire-libre"><img src="fotos/foto2.jpg" alt="foto2"></a>
+        <a href="fotos/foto3.jpg" data-lightbox="aire-libre"><img src="fotos/foto3.jpg" alt="foto3"></a>
+        <a href="fotos/foto4.jpg" data-lightbox="aire-libre"><img src="fotos/foto4.jpg" alt="foto4"></a>
+        <a href="fotos/foto5.jpg" data-lightbox="aire-libre"><img src="fotos/foto5.jpg" alt="foto5"></a>
       </div>
     </div>
 
@@ -58,11 +58,15 @@
     <form action="https://formsubmit.co/franciscofotografo1212@gmail.com" method="POST">
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required>
+
       <label for="email">Correo electrónico:</label>
       <input type="email" id="email" name="email" required>
+
       <label for="mensaje">Mensaje:</label>
       <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
       <button type="submit">Enviar mensaje</button>
+
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://franph16.github.io/portafolio-francisco/gracias.html">
     </form>
@@ -81,9 +85,12 @@
     document.querySelectorAll('.mostrar-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         const target = document.getElementById(btn.dataset.target);
-        target.classList.toggle('visible');
+        if (target) {
+          target.classList.toggle('visible');
+        }
       });
     });
   </script>
 </body>
 </html>
+
