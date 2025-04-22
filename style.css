@@ -6,21 +6,24 @@ body {
   scroll-behavior: smooth;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .logo {
   height: 60px;
   margin-right: 15px;
-  vertical-align: middle;
-}
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-header img {
-  margin-bottom: 10px;
 }
 
 header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
   background: linear-gradient(to right, #000, #222);
   text-align: center;
   padding: 40px 20px;
@@ -35,6 +38,10 @@ header p {
   margin: 10px 0 20px;
   font-style: italic;
   color: #ccc;
+}
+
+nav {
+  margin-top: 10px;
 }
 
 nav a {
@@ -67,8 +74,6 @@ nav a:hover {
 }
 
 .gallery img {
-  width: 100%;
-  height: auto;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -113,39 +118,4 @@ button:hover {
 
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #111;
-  font-size: 0.9em;
-}
-
-
-.album {
-  margin-bottom: 40px;
-}
-
-.album img {
-  max-width: 250px;
-  margin: 10px;
-  border-radius: 12px;
-}
-
-.mostrar-btn {
-  margin: 10px 0;
-  padding: 10px 15px;
-  background-color: #ff9900;
-  border: none;
-  border-radius: 8px;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.imagenes-ocultas {
-  display: none;
-  margin-top: 10px;
-}
-
-.imagenes-ocultas.visible {
-  display: flex;
-  flex-wrap: wrap;
-}
+  padding:
