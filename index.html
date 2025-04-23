@@ -201,5 +201,26 @@
       });
     });
   </script>
+  <!-- Botón para volver al principio -->
+<button id="scrollToTopBtn" title="Volver arriba">↑</button>
+
+<script>
+  // Obtener el botón
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  // Mostrar el botón cuando el usuario hace scroll hacia abajo
+  window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      scrollToTopBtn.style.display = "block"; // Mostrar el botón
+    } else {
+      scrollToTopBtn.style.display = "none"; // Ocultar el botón cuando está arriba
+    }
+  };
+
+  // Al hacer clic en el botón, el navegador volverá al principio
+  scrollToTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
 </body>
 </html>
