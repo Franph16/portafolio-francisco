@@ -80,7 +80,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0px;
+  gap: 5px;
   margin: 40px auto;
 }
 
