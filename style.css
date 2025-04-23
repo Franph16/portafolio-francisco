@@ -135,4 +135,17 @@ footer {
   padding: 20px;
   background-color: #222;
   color: #ccc;
+
+  .qr-section {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.qr-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #ff9900;
+}
+
 }
