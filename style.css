@@ -198,4 +198,40 @@ footer {
 
 #scrollToTopBtn:hover {
   background-color: #e67e00;
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  display: none; /* Se muestra solo si el usuario no ha aceptado */
+  z-index: 9999; /* Asegura que la barra esté por encima del contenido */
+}
+
+.cookie-consent p {
+  margin: 0;
+}
+
+.cookie-consent a {
+  color: #ff9900;
+  text-decoration: none;
+}
+
+.cookie-consent button {
+  background-color: #ff9900;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.cookie-consent button:hover {
+  background-color: #e67e00;
 }
