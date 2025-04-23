@@ -12,7 +12,7 @@ img {
   display: block;
 }
 
-.logo{
+.logo {
   height: 200px;
   margin-right: 120px;
 }
@@ -30,8 +30,9 @@ header {
 }
 
 header h1 {
-  font-size: 1em;
+  font-size: 0.5em;
   margin: 0;
+  color: #fff;
 }
 
 header p {
@@ -49,9 +50,8 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2rem;       
+  font-size: 1.2rem;
 }
-
 
 nav a:hover {
   text-decoration: underline;
@@ -103,7 +103,8 @@ form {
   gap: 15px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 10px;
   border: none;
   border-radius: 8px;
@@ -111,7 +112,8 @@ input, textarea {
   color: #fff;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: 2px solid #ff9900;
 }
 
@@ -135,11 +137,16 @@ footer {
   padding: 20px;
   background-color: #222;
   color: #ccc;
+}
 
-  .qr-section {
+/* CENTRADO Y ESCALADO QR */
+.qr-section {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .qr-section h2 {
@@ -148,4 +155,31 @@ footer {
   color: #ff9900;
 }
 
+.qr-section img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+/* BOTÓN VOLVER ARRIBA CENTRADO ABAJO */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #e67e00;
 }
