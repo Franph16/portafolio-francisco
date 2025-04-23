@@ -41,15 +41,17 @@ header p {
 }
 
 nav {
-  margin-top: 10px;
+  margin-top: 100px;
 }
 
 nav a {
-  margin: 0 15px;
+  margin: 0 10px;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2rem;       
 }
+
 
 nav a:hover {
   text-decoration: underline;
@@ -74,35 +76,23 @@ nav a:hover {
   margin-bottom: 50px;
 }
 
-.foto-principal {
-  width: 60%;
-  max-width: 300px;
-  display: block;
-  margin: 0 auto 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 153, 0, 0.4);
-}
-
-.imagenes-ocultas {
-  display: none;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-
-.imagenes-ocultas.visible {
+.fotos-principales {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0px;
+  margin: 40px auto;
 }
 
-.imagenes-ocultas img {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
+.fotos-principales a img {
+  width: 90%;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 153, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.imagenes-ocultas img:hover {
+.fotos-principales a img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px #ff9900;
 }
