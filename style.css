@@ -2,12 +2,12 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   background-color: #0d0d0d;
-  background-image: url('textura-suave.png'); /* textura suave */
+  background-image: url('textura-suave.png');
   background-repeat: repeat;
   background-size: cover;
   color: #f5f5f5;
   scroll-behavior: smooth;
-  position: relative; /* necesario para la capa adicional */
+  position: relative; 
 }
 
 body::before {
@@ -17,9 +17,9 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: inherit; /* hereda la imagen de fondo */
-  opacity: 0.2; /* ajusta la opacidad de la textura */
-  z-index: -1; /* coloca la capa detrás del contenido */
+  background: inherit;
+  opacity: 0.2; 
+  z-index: -1; 
 }
 
 img {
@@ -155,7 +155,6 @@ footer {
   color: #ccc;
 }
 
-/* CENTRADO Y ESCALADO QR */
 .qr-section {
   text-align: center;
   margin-top: 40px;
@@ -177,7 +176,6 @@ footer {
   height: auto;
 }
 
-/* BOTÓN VOLVER ARRIBA CENTRADO ABAJO */
 #scrollToTopBtn {
   display: none;
   position: fixed;
@@ -200,7 +198,6 @@ footer {
   background-color: #e67e00;
 }
 
-/* Estilo de la barra de cookies */
 .cookie-consent {
   position: fixed;
   bottom: 0;
@@ -211,8 +208,8 @@ footer {
   padding: 15px;
   text-align: center;
   font-size: 14px;
-  display: none; /* Se muestra solo si el usuario no ha aceptado */
-  z-index: 9999; /* Asegura que la barra esté por encima del contenido */
+  display: none; 
+  z-index: 9999; 
 }
 
 .cookie-consent p {
