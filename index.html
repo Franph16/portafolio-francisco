@@ -211,13 +211,11 @@
   // Mostrar el botón cuando el usuario hace scroll hacia abajo
   window.onscroll = function () {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      scrollToTopBtn.style.display = "block"; // Mostrar el botón
+      scrollToTopBtn.style.display = "block";
     } else {
-      scrollToTopBtn.style.display = "none"; // Ocultar el botón cuando está arriba
+      scrollToTopBtn.style.display = "none";
     }
   };
-
-  // Al hacer clic en el botón, el navegador volverá al principio
   scrollToTopBtn.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
@@ -227,8 +225,6 @@
   <p>Este sitio web usa cookies para mejorar tu experiencia. <a href="#">Más información</a>.</p>
   <button id="accept-cookies">Aceptar</button>
 </div>
-
 <script src="cookies.js" defer></script>
 </body>
-
 </html>
