@@ -43,7 +43,7 @@
       <a href="fotos/foto3.webp" data-lightbox="principales"><img src="fotos/foto3.webp" alt="Foto 3"></a>
     </div>
 
-    <button class="mostrar-mas-btn" onclick="mostrarMasFotos('galeria-extra-1', this)">Mostrar más fotos</button>
+    <button class="mostrar-mas-btn" onclick="mostrarMasFotos('galeria-extra-1', this)">Ver Mas...</button>
     <div id="galeria-extra-1" class="fotos-principales oculto">
       <a href="fotos/foto.webp" data-lightbox="principales"><img src="fotos/foto.webp" alt="Foto 5"></a>
       <a href="fotos/foto.webp" data-lightbox="principales"><img src="fotos/foto.webp" alt="Foto 6"></a>
@@ -56,7 +56,7 @@
       <a href="fotos/foto7.webp" data-lightbox="principales"><img src="fotos/foto7.webp" alt="Foto 7"></a>
     </div>
 
-    <button class="mostrar-mas-btn" onclick="mostrarMasFotos('galeria-extra-2', this)">Mostrar más fotos</button>
+    <button class="mostrar-mas-btn" onclick="mostrarMasFotos('galeria-extra-2', this)">Ver Mas...</button>
     <div id="galeria-extra-2" class="fotos-principales oculto">
       <a href="fotos/foto.webp" data-lightbox="principales"><img src="fotos/foto.webp" alt="Foto 10"></a>
       <a href="fotos/foto.webp" data-lightbox="principales"><img src="fotos/foto.webp" alt="Foto 11"></a>
@@ -69,7 +69,7 @@
       <a href="fotos/foto10.webp" data-lightbox="principales"><img src="fotos/foto10.webp" alt="Foto 10"></a>
     </div>
 
-    <button class="mostrar-mas-btn" onclick="mostrarMasFotos('galeria-extra-3', this)">Mostrar más fotos</button>
+    <button class="mostrar-mas-btn" onclick="mostrarMasFotos('galeria-extra-3', this)">Ver Mas...</button>
     <div id="galeria-extra-3" class="fotos-principales oculto">
       <a href="fotos/foto.webp" data-lightbox="principales"><img src="fotos/foto.webp" alt="Foto 10"></a>
       <a href="fotos/foto.webp" data-lightbox="principales"><img src="fotos/foto.webp" alt="Foto 11"></a>
@@ -114,7 +114,7 @@
     function mostrarMasFotos(id, boton) {
       const galeria = document.getElementById(id);
       galeria.classList.toggle("oculto");
-      boton.textContent = galeria.classList.contains("oculto") ? "Mostrar más fotos" : "Ocultar fotos";
+      boton.textContent = galeria.classList.contains("oculto") ? "Ver Mas..." : "Ver Menos...";
     }
   </script>
 </body>
